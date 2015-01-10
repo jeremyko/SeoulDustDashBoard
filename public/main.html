@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html ng-app="seoulDustApp" >
+
+<head>
+    <meta charset="utf-8">
+    <title>seoul dust dashboard app</title>
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="Chart.js/Chart.js"></script>
+    <script src="tc-angular-chartjs/dist/tc-angular-chartjs.min.js"></script>
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <!-- user code -->
+    <script src="globalDataService/globalDataService.js"></script>
+    <script src="main.js"></script>
+    <script src="dustDataTable/dustDataTable.js"></script>
+    <script src="dustChart/dustChart.js"></script>
+
+</head>
+
+<body >
+
+<div class="jumbotron">
+<!-- <div class="container" > -->
+
+    <h2>Seoul Dust Dashboard (PM10)</h2>
+    <div ng-controller="dashBoardMainCtrl">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <label ng-repeat="areaObj in areaObjForMultiSelect">
+                    <div class="panel-body">
+                        <input type="checkbox"  ng-model="areaObj.selected" ng-click="checkBoxChanged(areaObj)"/> {{areaObj.area}}
+                    </div>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="row" >
+
+            <div class="col-sm-3">
+                <p class="input-group">
+                    <input type="text" placeholder="Start Date" class="form-control"
+                           datepicker-popup="yyyyMMdd"
+                           ng-model="dtFrom"
+                           is-open="openedFrom"
+                           min-date="minDate"
+                           max-date="'2015-12-30'"
+                           datepicker-options="dateOptions"
+                           date-disabled="disabled(date, mode)"
+                           ng-required="true"
+                           close-text="Close" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default" ng-click="openFrom($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                </p>
+            </div>
+
+            <div class="col-sm-3">
+                <p class="input-group">
+                    <input type="text" placeholder="End Date" class="form-control"
+                           datepicker-popup="yyyyMMdd"
+                           ng-model="dtTo"
+                           is-open="openedTo"
+                           min-date="minDate"
+                           max-date="'2015-12-30'"
+                           datepicker-options="dateOptions"
+                           date-disabled="disabled(date, mode)"
+                           ng-required="true"
+                           close-text="Close" />
+                            <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="openTo($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                            </span>
+                </p>
+            </div>
+
+
+            <button type="button" class="btn btn-info" ng-click="showData()"> Show</button> &nbsp; &nbsp;
+
+            <label> <input type="radio" ng-model="view_format" value="format_table" ng-change='displayFormatChanged(view_format)'> <span class="glyphicon glyphicon-list" ></span> List  </label> &nbsp;
+            <label> <input type="radio" ng-model="view_format" value="format_chart" ng-change='displayFormatChanged(view_format)'> <span class="glyphicon glyphicon-stats"></span> Chart  </label>
+<!--
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default">
+                    <input type="radio" ng-model="view_format" value="format_table" ng-change='displayFormatChanged(view_format)'> <span class="glyphicon glyphicon-list" ></span> List
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" ng-model="view_format" value="format_chart" ng-change='displayFormatChanged(view_format)'> <span class="glyphicon glyphicon-stats"></span> Chart
+                </label>
+            </div>
+-->
+        </div>  <!-- row -->
+
+
+
+        <div style="text-align :right">
+            <div ng-show="view_format=='format_chart'">
+                <label><input type="checkbox" ng-model="keep_monitoring" ng-click="keepMonitoringCheckBoxChanged()"/> Keep Monitoring</label>
+            </div>
+
+            <div ng-show="view_format!='format_chart'">
+            Total {{ totalDataCount }}
+            </div>
+        </div>
+
+
+
+
+    </div> <!-- main controller -->
+
+    <div ng-view ></div>
+
+<!--</div>--> <!-- container -->
+</div>
+
+</body>
+</html>
+
+
+<!--
+    <div class="col-sm-2">
+        <div class="input-group">
+            <input type="text"  class="form-control" ng-model="selected_area">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul id="color-dropdown-menu" class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li ng-repeat="area in areas" class="input-sm" ng-click="selectArea(area)">{{area}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+-->

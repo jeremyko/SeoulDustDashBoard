@@ -1,0 +1,52 @@
+
+<div class="panel panel-default" >
+
+    <table class="table table-hover table-condensed" >
+        <thead>
+        <tr>
+            <th class="col-md-1">측정소명</th>
+            <th class="col-md-1">날자</th>
+            <th class="col-md-1">미세먼지(PM10)</th>
+            <th class="col-md-1">초미세먼지(PM2.5)</th>
+            <th class="col-md-1">등급</th>
+            <th class="col-md-1">결정물질</th>
+            <th class="col-md-1">지수</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <!-- <tr ng-repeat="dustData in dustDatas"> -->
+        <tr ng-repeat="dustData in filteredDustDatas">
+            <td class="col-md-1">{{dustData.area }}</td>
+            <td class="col-md-1">{{dustData.date }} </td>
+            <td class="col-md-1">{{dustData.pm10 }}</td>
+            <td class="col-md-1">{{dustData.pm25 }}</td>
+            <td class="col-md-1">{{dustData.level }}</td>
+            <td class="col-md-1">{{dustData.detMat }}</td>
+            <td class="col-md-1">{{dustData.detMatIndex}}</td>
+        </tr>
+        <tr ng-show="!dustDatas.length">
+            <td colspan="12" style="text-align :center">
+                <span class="text-warning">No data exists.</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="pull-left">
+        <br/>
+        <table>
+            <tr>
+                <td>
+                    <pagination boundary-links="true"
+                                max-size="10"
+                                items-per-page="itemsPerPage"
+                                total-items="dustDatas.length"
+                                ng-model="currentPage"
+                                ng-change="pageChanged()"></pagination>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

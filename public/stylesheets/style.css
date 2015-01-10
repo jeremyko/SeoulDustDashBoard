@@ -1,0 +1,49 @@
+.tc-chart-js-legend {
+
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.tc-chart-js-legend li {
+    display: block;
+    float: left;
+    /*clear:both;*/ /* vertical*/
+    padding:10px;
+}
+
+.tc-chart-js-legend li span {
+    width:25px;
+    height:25px;
+    display:block;
+    float:left;
+    margin-right:10px;
+}
+
+
+body {
+    background-color : #e5e8df;
+    color: #292825;
+}
+
+thead {
+    background-color: #e3e3e3;
+    color:#292825;
+}
+
+.panel-body {
+    background-color : #d6d8c4;
+    color: #292825;
+
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/*
+.ng-scope  {
+    border: 1px solid red;
+    margin: 3px;
+}
+*/
+
