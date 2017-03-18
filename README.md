@@ -1,10 +1,10 @@
-##Displaying current density of particulate matter(PM10) in seoul using AngularJS, Express.js
+## Displaying current density of particulate matter(PM10) in seoul using AngularJS, Express.js
 
 ![image](https://github.com/jeremyko/SeoulDustDashBoard/blob/master/scrCap1.png)
 
 ![image](https://github.com/jeremyko/SeoulDustDashBoard/blob/master/scrCap2.png)
 
-###HowTo
+### HowTo
   
 ##### 1. Need to create below table on your MySql 
     CREATE TABLE dust_data
