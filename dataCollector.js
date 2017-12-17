@@ -31,8 +31,8 @@ var getDustData = function  () {
                 return;
             }
             var strContents = new Buffer(body, 'binary');
-            var iconv = new Iconv('EUC-KR', 'UTF-8'); //'euc-kr'-->'UTF8'
-            strContents = iconv.convert(strContents).toString();
+            //var iconv = new Iconv('EUC-KR', 'UTF-8'); //'euc-kr'-->'UTF8'
+            //strContents = iconv.convert(strContents).toString();
             var $ = cheerio.load(strContents);
 
             var strDate = $('.ft_point1', '.graph_h4').text(); //"2014년 12월 17일 23시"
