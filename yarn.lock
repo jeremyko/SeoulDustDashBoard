@@ -2,9 +2,13 @@
 # yarn lockfile v1
 
 
-"@bower_components/Chart.js@nnnick/Chart.js#^1.0.0-beta":
-  version "1.1.1"
-  resolved "https://codeload.github.com/nnnick/Chart.js/tar.gz/a62537a80029cd5a2e230769a652904e2de2d5d4"
+"@bower_components/Chart.js@nnnick/Chart.js#^2.9.3":
+  version "2.9.3"
+  uid "06f73dc3590084b2c464bf08189c7aee2b6b92d2"
+  resolved "https://codeload.github.com/nnnick/Chart.js/tar.gz/06f73dc3590084b2c464bf08189c7aee2b6b92d2"
+  dependencies:
+    chartjs-color "^2.1.0"
+    moment "^2.10.2"
 
 "@bower_components/angular-bootstrap@angular-ui/bootstrap-bower#~0.12.0":
   version "0.0.0"
@@ -154,6 +158,19 @@ chart.js@^1.0.2:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-1.1.1.tgz#a9b17054220bd45cbdb176fd6bcb8783ef871a7d"
 
+chartjs-color-string@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/chartjs-color-string/-/chartjs-color-string-0.6.0.tgz#1df096621c0e70720a64f4135ea171d051402f71"
+  dependencies:
+    color-name "^1.0.0"
+
+chartjs-color@^2.1.0:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/chartjs-color/-/chartjs-color-2.4.1.tgz#6118bba202fe1ea79dd7f7c0f9da93467296c3b0"
+  dependencies:
+    chartjs-color-string "^0.6.0"
+    color-convert "^1.9.3"
+
 cheerio@0.x.x:
   version "0.22.0"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-0.22.0.tgz#a9baa860a3f9b595a6b81b1a86873121ed3a269e"
@@ -178,6 +195,20 @@ cheerio@0.x.x:
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
+
+color-convert@^1.9.3:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
+  dependencies:
+    color-name "1.1.3"
+
+color-name@1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
+
+color-name@^1.0.0:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
 
 combined-stream@^1.0.5, combined-stream@~1.0.5:
   version "1.0.5"
@@ -660,6 +691,10 @@ mkdirp@~0.5.0:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+moment@^2.10.2:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
 
 monocle@1.1.51:
   version "1.1.51"
