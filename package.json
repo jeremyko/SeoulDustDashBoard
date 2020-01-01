@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "body-parser": "~1.19.0",
-    "bower": "^1.3.12",
+    "bower": "^1.8.8",
     "cheerio": "0.x.x",
     "cookie-parser": "~1.3.3",
     "debug": "~2.6.9",
