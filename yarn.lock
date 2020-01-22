@@ -34,11 +34,12 @@
   uid "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
   resolved "https://codeload.github.com/jquery/jquery-dist/tar.gz/15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
 
-"@bower_components/tc-angular-chartjs@carlcraig/tc-angular-chartjs#~1.0.9":
-  version "1.0.16"
-  resolved "https://codeload.github.com/carlcraig/tc-angular-chartjs/tar.gz/8e193ab1ea619a3f30d22110445f7989d66e66c8"
+"@bower_components/tc-angular-chartjs@carlcraig/tc-angular-chartjs#~2.1.4":
+  version "2.1.4"
+  uid c8ddd075c82ce26624a05faca4e648a9eb6710e8
+  resolved "https://codeload.github.com/carlcraig/tc-angular-chartjs/tar.gz/c8ddd075c82ce26624a05faca4e648a9eb6710e8"
   dependencies:
-    chart.js "^1.0.2"
+    chart.js "^2.1.3"
 
 accepts@~1.1.2:
   version "1.1.4"
@@ -170,9 +171,12 @@ character-parser@1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/character-parser/-/character-parser-1.2.1.tgz#c0dde4ab182713b919b970959a123ecc1a30fcd6"
 
-chart.js@^1.0.2:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-1.1.1.tgz#a9b17054220bd45cbdb176fd6bcb8783ef871a7d"
+chart.js@^2.1.3:
+  version "2.9.3"
+  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-2.9.3.tgz#ae3884114dafd381bc600f5b35a189138aac1ef7"
+  dependencies:
+    chartjs-color "^2.1.0"
+    moment "^2.10.2"
 
 chartjs-color-string@^0.6.0:
   version "0.6.0"
