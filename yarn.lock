@@ -15,9 +15,10 @@
   uid "752d6a79f500391a7efb06d80f37405c920a6f2b"
   resolved "https://codeload.github.com/angular-ui/bootstrap-bower/tar.gz/752d6a79f500391a7efb06d80f37405c920a6f2b"
 
-"@bower_components/angular-route@angular/bower-angular-route#~1.3.8":
-  version "1.3.20"
-  resolved "https://codeload.github.com/angular/bower-angular-route/tar.gz/785879cc163aee00ca7ef262ece356b8d81fd794"
+"@bower_components/angular-route@angular/bower-angular-route#~1.7.9":
+  version "1.7.9"
+  uid ff545591491260ebff98892fac5b26bc34b7e4c4
+  resolved "https://codeload.github.com/angular/bower-angular-route/tar.gz/ff545591491260ebff98892fac5b26bc34b7e4c4"
 
 "@bower_components/angular@angular/bower-angular#>=1.7.9":
   version "1.7.9"
