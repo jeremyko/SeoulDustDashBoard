@@ -19,9 +19,10 @@
   version "1.3.20"
   resolved "https://codeload.github.com/angular/bower-angular-route/tar.gz/785879cc163aee00ca7ef262ece356b8d81fd794"
 
-"@bower_components/angular@angular/bower-angular#>=1.3.0":
-  version "1.6.7"
-  resolved "https://codeload.github.com/angular/bower-angular/tar.gz/03cf5343bfd0d30b7b72a48f7974cd6ef6842630"
+"@bower_components/angular@angular/bower-angular#>=1.7.9":
+  version "1.7.9"
+  uid "84a5b810f33f82a552cee361268b77181691ce65"
+  resolved "https://codeload.github.com/angular/bower-angular/tar.gz/84a5b810f33f82a552cee361268b77181691ce65"
 
 "@bower_components/bootstrap@twbs/bootstrap#~3.1.1":
   version "3.1.1"
