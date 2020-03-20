@@ -15,7 +15,7 @@
     "express": "~4.9.0",
     "iconv": "2.x.x",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1",
+    "morgan": "~1.10.0",
     "mysql": "x.x.x",
     "request": "2.x.x",
     "serve-favicon": "~2.5.0",
