@@ -24,7 +24,7 @@
     "@bower_components/angular-bootstrap": "angular-ui/bootstrap-bower#~2.5.0",
     "@bower_components/angular-route": "angular/bower-angular-route#~1.7.9",
     "@bower_components/bootstrap": "twbs/bootstrap#~3.1.1",
-    "@bower_components/jquery": "jquery/jquery-dist#~3.4.1",
+    "@bower_components/jquery": "jquery/jquery-dist#~3.5.0",
     "@bower_components/tc-angular-chartjs": "carlcraig/tc-angular-chartjs#~2.1.4"
   },
   "engines": {
