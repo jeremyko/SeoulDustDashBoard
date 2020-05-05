@@ -29,10 +29,10 @@
   version "3.1.1"
   resolved "https://codeload.github.com/twbs/bootstrap/tar.gz/a365d8689c3f3cee7f1acf86b61270ecca8e106d"
 
-"@bower_components/jquery@jquery/jquery-dist#~3.4.1":
-  version "3.4.1"
-  uid "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
-  resolved "https://codeload.github.com/jquery/jquery-dist/tar.gz/15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
+"@bower_components/jquery@jquery/jquery-dist#~3.5.1":
+  version "3.5.1"
+  uid "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
+  resolved "https://codeload.github.com/jquery/jquery-dist/tar.gz/4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
 
 "@bower_components/tc-angular-chartjs@carlcraig/tc-angular-chartjs#~2.1.4":
   version "2.1.4"
@@ -964,6 +964,10 @@ right-align@^0.1.1:
   resolved "https://registry.yarnpkg.com/right-align/-/right-align-0.1.3.tgz#61339b722fe6a3515689210d24e14c96148613ef"
   dependencies:
     align-text "^0.1.1"
+
+safe-buffer@5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
 safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
