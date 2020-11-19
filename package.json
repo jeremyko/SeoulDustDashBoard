@@ -11,7 +11,7 @@
     "bower": "^1.8.8",
     "cheerio": "0.x.x",
     "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
+    "debug": "~4.3.1",
     "express": "~4.9.0",
     "iconv": "2.x.x",
     "jade": "~1.11.0",
