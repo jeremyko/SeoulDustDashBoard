@@ -12,7 +12,7 @@
     "cheerio": "0.x.x",
     "cookie-parser": "~1.4.4",
     "debug": "~4.3.2",
-    "express": "~4.9.0",
+    "express": "~4.17.3",
     "iconv": "2.x.x",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
